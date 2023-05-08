@@ -1,7 +1,6 @@
 package internal
 
 type Config struct {
-	Httpd    httpd    `yaml:"httpd"`
 	RabbitMQ rabbitMQ `yaml:"rabbitMQ"`
 	Scylla   scylla   `yaml:"scylla"`
 }
@@ -13,4 +12,5 @@ type rabbitMQ struct {
 }
 type scylla struct {
 	ConnectionUrl string `yaml:"connectionUrl"`
+	KeySpace      string `yaml:"keyspace"`
 }
